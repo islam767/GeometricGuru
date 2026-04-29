@@ -15,4 +15,4 @@ Dasturda quyidagi matematik amallar ishlatiladi:
 * **\* (Ko'paytirish):** Yuza (maydon) hisoblash.
 * **/ (Bo'lish):** Radius yoki nisbatlarni aniqlash 
 
-![yangilandi](resim1.jpg)
+(resim1.jpg)
