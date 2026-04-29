@@ -1,3 +1,13 @@
+##  Dastur nima ish qiladi?
+Bu dastur to'g'ri to'rtburchak shaklidagi har qanday joyning (masalan, hovli yoki xona) maydonini hisoblab beradi.
+
+##  Qanday ishlaydi?
+1. Dastur foydalanuvchidan joyning **uzunligini** raqamda kiritishni so'raydi.
+2. Keyin **kengligini** so'raydi.
+3. Kiritilgan ikkita raqamni bir-biriga ko'paytiradi (`yuza = uzunlik * kenglik`).
+4. Va tayyor natijani ekranga chiqarib beradi.
+
+(<Tortburchak .gif>)
 
 
 Arifmetik amallar  mavzu uchun 
