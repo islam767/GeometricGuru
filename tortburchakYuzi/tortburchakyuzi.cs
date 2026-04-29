@@ -1,28 +1,10 @@
 using System;
-
-namespace GeometryGuru
+public class tortburchakyuzi
 {
-  class Program
-  {
-
-  
-    static void Main()
-     {
-
-
-      /*
-        // Sonlarni belgilaymiz
-       double a = Convert.ToInt32(Console.ReadLine());
-       double b = Convert.ToInt32(Console.ReadLine());
-
-       // Natijalarni ekranga chiqaramiz
-       Console.WriteLine("Qo'shish: " + (a + b));
-       Console.WriteLine("Ayirish: " + (a - b));
-       Console.WriteLine("Ko'paytirish: " + (a * b));
-       Console.WriteLine("Bo'lish: " + (a / b));
-       */
-
-        
+    class Program
+    {
+        static void Main(string[] args)
+        {
             Console.WriteLine("Tortburchak yuz hisoplash");
             Console.WriteLine("-------------");
 
@@ -37,18 +19,6 @@ namespace GeometryGuru
             Console.WriteLine($"\nNatija: tort burchakni yuzi {yuza} teng.");
             
             Console.ReadKey();
-
-
-
-
-
-
-
-
-
-
-
-     }
-  }
-    
+        }
+    }
 }
