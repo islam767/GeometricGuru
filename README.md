@@ -1,3 +1,5 @@
+
+
 Arifmetik amallar  mavzu uchun 
 
 # GeometryGru
@@ -12,3 +14,5 @@ Dasturda quyidagi matematik amallar ishlatiladi:
 * **- (Ayirish):** Farqlarni topish.
 * **\* (Ko'paytirish):** Yuza (maydon) hisoblash.
 * **/ (Bo'lish):** Radius yoki nisbatlarni aniqlash 
+
+![yangilandi](resim1.jpg)
