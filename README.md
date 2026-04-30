@@ -7,8 +7,11 @@ Bu dastur to'g'ri to'rtburchak shaklidagi har qanday joyning (masalan, hovli yok
 3. Kiritilgan ikkita raqamni bir-biriga ko'paytiradi (`yuza = uzunlik * kenglik`).
 4. Va tayyor natijani ekranga chiqarib beradi.
 
+<<<<<<< HEAD
 ![Tortburchak Animasyonu](Tortburchak.gif)
 
+=======
+>>>>>>> 87d262075ce44fa01dac5c63bfea704c224d4477
 
 Arifmetik amallar  mavzu uchun 
 
