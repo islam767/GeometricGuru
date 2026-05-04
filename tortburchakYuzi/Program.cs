@@ -7,10 +7,10 @@ namespace GeometryGuru
         static void Main(string[] args)
         {
             
-            Console.Write("Birinci sayıyı girin (a): ");
+            Console.Write(" 1- sonni kiriting (a): ");
             double a = Convert.ToDouble(Console.ReadLine());
             
-            Console.Write("İkinci sayıyı girin (b): ");
+            Console.Write(" 2 sonni kiriting (b): ");
             double b = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Qo'shish: " + (a + b));
@@ -21,7 +21,7 @@ namespace GeometryGuru
 
 
             // --- TORTBURCHAK XISOPLASH
-            Console.WriteLine("Tortburchak yuz hisoplash");
+            Console.WriteLine("Tortburchak yuzini hisoplash");
             Console.WriteLine("--------------");
 
             Console.Write("tortburchakni uzunligini kiriting (metr): ");
@@ -35,12 +35,10 @@ namespace GeometryGuru
             Console.WriteLine("----------------");
             Console.WriteLine("Tortburchakning yuzi: " + yuz + " kv metr");
 
-            // Programın kapanmasını engellemek için
+            
             Console.WriteLine("\nChiqish uchun bir tugmaga bosing...");
             Console.ReadKey();
             
-
-
 
 
 
@@ -54,7 +52,7 @@ namespace GeometryGuru
             int tanlov = Convert.ToInt32(Console.ReadLine());
              
   
-            // Kirish qismi
+            //2 Kirish qismi
             Console.WriteLine("=== GEOMETRY GURU  ===");
             Console.WriteLine("1. Oddiy arifmetika (+, -, *, /)");
             Console.WriteLine("2. Chuqur (hovuz) hajmini hisoblash");
@@ -103,7 +101,7 @@ namespace GeometryGuru
                     Console.WriteLine("Noto'g'ri amal kiritildi!");
                 }
             }
-            // 2-YO'L: Chuqur hajmi
+            // 2-YOL: Chuqur hajmi
             else if (asosiyTanlov == "2")
             {
                 Console.WriteLine("\n--- Chuqur hajmini hisoblash ---");
