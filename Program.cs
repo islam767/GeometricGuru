@@ -6,7 +6,7 @@ namespace GeometryGuru
     {
         static void Main(string[] args)
         {
-            
+            /*
             Console.Write("Birinci sayıyı girin (a): ");
             double a = Convert.ToDouble(Console.ReadLine());
             
@@ -129,7 +129,63 @@ namespace GeometryGuru
                 Console.WriteLine("notugri  tanlov ");
             }
 
-            
-        }
+            */
+
+
+    
+    {
+        string qaytaBoshlash;
+        do
+        {
+            Console.Clear();
+            Console.WriteLine("=== GeometryGuru Menyusi ===");
+            Console.WriteLine("1. Sonning darajasini hisoblash");
+            Console.WriteLine("2. 1 dan N gacha tub sonlar yig'indisini topish");
+            Console.Write("\nTanlang (1 yoki 2): ");
+            string tanlov = Console.ReadLine();
+
+            switch (tanlov)
+            {
+                case "1":
+                    Console.Write("Asosni kiriting: ");
+                    double asos = double.Parse(Console.ReadLine());
+                    Console.Write("Darajani kiriting: ");
+                    double daraja = double.Parse(Console.ReadLine());
+                    Console.WriteLine($"{asos}^{daraja} = {Math.Pow(asos, daraja)}");
+                    break;
+
+                case "2":
+                    Console.Write("N sonini kiriting: ");
+                    int n = int.Parse(Console.ReadLine());
+                    int yigindi = 0;
+                    for (int i = 2; i <= n; i++)
+                    {
+                        if (IsPrime(i)) yigindi += i;
+                    }
+                    Console.WriteLine($"1 dan {n} gacha bo'lgan tub sonlar yig'indisi: {yigindi}");
+                    break;
+
+                default:
+                    Console.WriteLine("Noto'g'ri tanlov!");
+                    break;
+            }
+
+            Console.Write("\nDasturni qayta boshlashni xohlaysizmi? (ha/yo'q): ");
+            qaytaBoshlash = Console.ReadLine().ToLower();
+
+        } while (qaytaBoshlash == "ha");
     }
-}
+
+    // Tub sonni aniqlash funksiyasi
+    static bool IsPrime(int number)
+    {
+        if (number < 2) return false;
+        for (int i = 2; i <= Math.Sqrt(number); i++)
+        {
+            if (number % i == 0) return false;
+        }
+        return true;
+    }
+  }
+        }
+ }
