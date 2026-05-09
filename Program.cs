@@ -129,14 +129,14 @@ namespace GeometryGuru
                 Console.WriteLine("notugri  tanlov ");
             }
 
-            */
+            
 
 
     
-    {
-        string qaytaBoshlash;
-        do
-        {
+          {
+          string qaytaBoshlash;
+          do
+         {
             Console.Clear();
             Console.WriteLine("=== GeometryGuru Menyusi ===");
             Console.WriteLine("1. Sonning darajasini hisoblash");
@@ -173,19 +173,133 @@ namespace GeometryGuru
             Console.Write("\nDasturni qayta boshlashni xohlaysizmi? (ha/yo'q): ");
             qaytaBoshlash = Console.ReadLine().ToLower();
 
-        } while (qaytaBoshlash == "ha");
+           } while (qaytaBoshlash == "ha");
+          }
+
+           // Tub sonni aniqlash funksiyasi
+          static bool IsPrime(int number)
+          {
+          if (number < 2) return false;
+          for (int i = 2; i <= Math.Sqrt(number); i++)
+           {
+            if (number % i == 0) return false;
+           }
+            return true;
+          }*/
+
+
+    
+          public static bool IsDigit(char character)
+         {
+         return character >= '0' && character <= '9';
+         }
+ 
+    
+    public static void RunGeometryGuru(int choice)
+    {
+        switch (choice)
+        {
+            case 1: AddNumbers(); break;
+            case 2: DivideNumber(); break;
+            case 3: CalculateGeron(); break;
+            default: Console.WriteLine("Yanlış seçim!"); break;
+        }
     }
 
-    // Tub sonni aniqlash funksiyasi
-    static bool IsPrime(int number)
+  
+    public static int GetMax(int a, int b, int c)
+    {
+       
+        return Math.Max(a, Math.Max(b, c));
+    }
+
+   
+    public static long Factorial(int n)
+    {
+        long result = 1;
+        for (int i = 1; i <= n; i++)
+        {
+            result *= i;
+        }
+        return result;
+    }
+
+    
+    public static int SumToN(int n)
+    {
+        int sum = 0;
+        for (int i = 1; i <= n; i++)
+        {
+            sum += i;
+        }
+        return sum;
+    }
+
+   
+    public static bool IsPrime(int number)
     {
         if (number < 2) return false;
+        
         for (int i = 2; i <= Math.Sqrt(number); i++)
         {
             if (number % i == 0) return false;
         }
         return true;
     }
-  }
+
+    
+    public static void CheckPassword()
+    {
+        int attempts = 0;
+        while (attempts < 3)
+        {
+            Console.Write("Parolni kiriting: ");
+            string input = Console.ReadLine();
+
+            if (input == "admin123")
+            {
+                Console.WriteLine("Muvaffaqiyatli kirdingiz!");
+                break; 
+            }
+
+            attempts++;
+            if (attempts == 3)
+            {
+                Console.WriteLine("3 ta urinish tugadi!");
+                break;
+            }
         }
+    }
+
+    
+     public static bool IsPalindrome(string word)
+     {
+        string reversed = "";
+        word = word.ToLower(); 
+
+      
+        for (int i = word.Length - 1; i >= 0; i--)
+        {
+            reversed += word[i];
+        }
+
+        return word == reversed;
+     }
+
+    
+       static void AddNumbers() ;
+       static void DivideNumber() ;   
+       static void CalculateGeron();
+
+
+
+  }
+     
  }
+}
+  
+  
+
+
+
+
