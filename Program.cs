@@ -185,7 +185,7 @@ namespace GeometryGuru
             if (number % i == 0) return false;
            }
             return true;
-          }*/
+          }
 
 
     
@@ -290,7 +290,87 @@ namespace GeometryGuru
        static void AddNumbers() ;
        static void DivideNumber() ;   
        static void CalculateGeron();
+       */
 
+     {
+        // 1. 1D Array asoslari
+        int[] sonlar = new int[10];
+        int yigindi = 0;
+        Console.WriteLine("10 ta son kiriting:");
+        for (int i = 0; i < 10; i++) {
+            sonlar[i] = int.Parse(Console.ReadLine());
+            yigindi += sonlar[i];
+        }
+        Console.WriteLine($"Elementlar yig'indisi: {yigindi}");
+
+        // 2. Eng katta va eng kichik qiymat
+        int max = sonlar.Max();
+        int min = sonlar.Min();
+        Console.WriteLine($"Eng katta: {max}, Eng kichik: {min}");
+
+        // 3. Juft va toq sonlar
+        Console.Write("Juft sonlar: ");
+        foreach (var s in sonlar) if (s % 2 == 0) Console.Write(s + " ");
+        
+        Console.Write("\nToq sonlar: ");
+        foreach (var s in sonlar) if (s % 2 != 0) Console.Write(s + " ");
+
+        // 4. O‘rtacha qiymat
+        double orta = (double)yigindi / sonlar.Length;
+        Console.WriteLine($"\nO'rtacha qiymat: {orta}");
+    }
+    // STRING BILAN ISHLASH
+          // 5. String teskari aylantirish
+
+               Console.Write("\nSo'z kiriting: ");
+               string matn = Console.ReadLine();
+               char[] charArray = matn.ToCharArray();
+               Array.Reverse(charArray);
+               Console.WriteLine("Teskari: " + new string(charArray));
+
+    // 6. Harflar sonini hisoblash (Lotin alifbosida)
+       int unli = 0, undosh = 0;
+       string unlilar = "aeuioo'i'a"; // O'zbek lotin unlilari
+       foreach (char c in matn.ToLower()) {
+      if (char.IsLetter(c)) {
+          if (unlilar.Contains(c)) unli++;
+          else undosh++;
+       }
+    }
+Console.WriteLine($"Unli: {unli}, Undosh: {undosh}");
+
+// 7. Palindrom tekshirish
+    string teskari = new string(charArray);
+      if (matn.ToLower() == teskari.ToLower()) 
+          Console.WriteLine("Bu palindrom!");
+      else 
+       Console.WriteLine("Palindrom emas.");
+    
+
+ // 8. StringBuilder bilan birlashtirish
+     StringBuilder gap = new StringBuilder();
+     Console.WriteLine("5 ta so'z kiriting:");
+     for (int i = 0; i < 5; i++)
+    {
+      gap.Append(Console.ReadLine()).Append(" ");
+    }
+    Console.WriteLine("Birlashgan gap: " + gap.ToString().Trim());
+
+    // 9. Bo'sh joylarni olib tashlash
+    string noSpace = matn.Replace(" ", "");
+    Console.WriteLine("Bo'sh joylarsiz: " + noSpace);
+
+    // 10. Ismlar Array + StringBuilder
+     string[] ismlar = new string[5];
+     StringBuilder sbIsmlar = new StringBuilder();
+    Console.WriteLine("5 ta ism kiriting:");
+    for (int i = 0; i < 5; i++) 
+    {
+    ismlar[i] = Console.ReadLine();
+    sbIsmlar.Append(ismlar[i]);
+    if (i < 4) sbIsmlar.Append(", ");
+    }
+   Console.WriteLine("Natija: " + sbIsmlar.ToString());
 
 
   }
